@@ -44,7 +44,7 @@ const Tweet = ({tweetObj, isOwner}) => {
             ) : (
                 <>
                     <h4>{tweetObj.text}</h4>
-                    {tweetObj.attachmentUrl && <img src={tweetObj.attachmentUrl} width="50px" height="50px" />}
+                    {tweetObj.attachmentUrl && <img src={tweetObj.attachmentUrl} alt="tweet" width="50px" height="50px" />}
                     {isOwner && (
                         <>
 
@@ -56,6 +56,6 @@ const Tweet = ({tweetObj, isOwner}) => {
             )}
         </div>
     );
-}
+};
 
 export default Tweet;
